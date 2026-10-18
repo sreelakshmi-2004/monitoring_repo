@@ -31,14 +31,14 @@ Legend: LOAD   → Reflects whether the unit definition was properly loaded.
 
 24 loaded units listed.
 ---------------------CPU USAGE------------------------------
-top - 18:12:48 up  1:55,  2 users,  load average: 0.00, 0.00, 0.00
-Tasks: 117 total,   1 running, 116 sleeping,   0 stopped,   0 zombie
+top - 07:52:47 up  2:30,  3 users,  load average: 0.00, 0.00, 0.00
+Tasks: 123 total,   1 running, 122 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st 
-MiB Mem :    908.6 total,    327.5 free,    305.3 used,    384.8 buff/cache     
-MiB Swap:      0.0 total,      0.0 free,      0.0 used.    603.3 avail Mem 
+MiB Mem :    908.6 total,    306.9 free,    312.6 used,    401.5 buff/cache     
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    596.0 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
-      1 root      20   0   25040  15592  10816 S   0.0   1.7   0:01.52 systemd
+      1 root      20   0   25036  15632  10868 S   0.0   1.7   0:01.50 systemd
       2 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kthreadd
       3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_wo+
       4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
@@ -49,17 +49,17 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    603.3 avail Mem
      10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      14 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ksoftir+
-     15 root       0 -20       0      0      0 S   0.0   0.0   0:00.38 pr/ttyS0
-     16 root      20   0       0      0      0 I   0.0   0.0   0:00.12 rcu_sch+
+     15 root       0 -20       0      0      0 S   0.0   0.0   0:00.40 pr/ttyS0
+     16 root      20   0       0      0      0 I   0.0   0.0   0:00.11 rcu_sch+
      17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp+
      18 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp+
-     19 root      rt   0       0      0      0 S   0.0   0.0   0:00.03 migrati+
+     19 root      rt   0       0      0      0 S   0.0   0.0   0:00.04 migrati+
      20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kprobe-+
      21 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_in+
      22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0
      23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1
      24 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_in+
-     25 root      rt   0       0      0      0 S   0.0   0.0   0:00.02 migrati+
+     25 root      rt   0       0      0      0 S   0.0   0.0   0:00.03 migrati+
      26 root      20   0       0      0      0 S   0.0   0.0   0:00.00 ksoftir+
      28 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      29 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtmp+
@@ -70,7 +70,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    603.3 avail Mem
      34 root      20   0       0      0      0 S   0.0   0.0   0:00.00 khungta+
      35 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_rea+
      38 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-     39 root      20   0       0      0      0 S   0.0   0.0   0:00.34 kcompac+
+     39 root      20   0       0      0      0 S   0.0   0.0   0:00.46 kcompac+
      40 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd
      41 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugepa+
      42 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
@@ -94,70 +94,89 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    603.3 avail Mem
      61 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      62 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      63 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-     64 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-     66 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     65 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      67 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+     68 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      70 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
      81 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-     82 root      20   0       0      0      0 S   0.0   0.0   0:00.03 jbd2/nv+
+     82 root      20   0       0      0      0 S   0.0   0.0   0:00.01 jbd2/nv+
      83 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
     118 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
     123 root      -2   0       0      0      0 S   0.0   0.0   0:00.00 psimon
-    129 root      19  -1   50380  17768  16400 S   0.0   1.9   0:00.32 systemd+
-    148 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    149 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    166 root      20   0       0      0      0 I   0.0   0.0   0:01.07 kworker+
-    176 root     -11   0  279208   9364   7292 S   0.0   1.0   0:00.57 multipa+
-    183 systemd+  20   0   22284  13932  11376 S   0.0   1.5   0:00.11 systemd+
-    191 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    195 root      20   0   39044  13536   8724 S   0.0   1.5   0:00.41 systemd+
-    199 root      -2   0       0      0      0 S   0.0   0.0   0:00.00 psimon
-    258 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    260 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    299 root      20   0       0      0      0 S   0.0   0.0   0:00.00 jbd2/nv+
-    300 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    532 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
-    551 systemd+  20   0   24652  12320  10732 S   0.0   1.3   0:00.10 systemd+
-    594 root      20   0    2824   2028   1880 S   0.0   0.2   0:00.00 acpid
-    596 root      20   0    2908   2008   1892 S   0.0   0.2   0:00.04 chronyd+
-    598 root      20   0    7488   3000   2748 S   0.0   0.3   0:00.01 cron
-    599 message+  20   0    8884   5216   4228 S   0.0   0.6   0:00.17 dbus-da+
-    609 root      20   0   80796   3952   3656 S   0.0   0.4   0:00.23 irqbala+
-    612 root      20   0   46828  29808  14656 S   0.0   3.2   0:00.21 network+
-    613 polkitd   20   0  381776  10088   7532 S   0.0   1.1   0:00.27 polkitd
-    617 root      20   0 1832820  20760  11944 S   0.0   2.2   0:00.91 amazon-+
-    619 root      20   0 1951612  39940  26780 S   0.0   4.3   0:00.57 snapd
-    622 root      20   0   18172   9108   7856 S   0.0   1.0   0:00.10 systemd+
-    624 root      20   0  543216  14932  12500 S   0.0   1.6   0:00.25 udisksd
-    658 root      20   0   10720   7584   6404 S   0.0   0.8   0:00.02 sshd
-    671 root      20   0    8280   2672   2476 S   0.0   0.3   0:00.00 agetty
-    685 root      20   0    8236   2552   2368 S   0.0   0.3   0:00.00 agetty
-    706 _chrony   20   0   20264   6052   5268 S   0.0   0.7   0:00.18 chronyd
-    712 _chrony   20   0   11936   2420   1776 S   0.0   0.3   0:00.00 chronyd
-    717 root      20   0  126228  32380  17752 S   0.0   3.5   0:00.19 unatten+
-    760 root      20   0  391088  13208  11256 S   0.0   1.4   0:00.10 ModemMa+
-    787 syslog    20   0  220304   5600   4168 S   0.0   0.6   0:00.07 rsyslogd
-    966 root      20   0   18124  11864   9824 S   0.0   1.3   0:00.02 sshd-se+
-    971 ubuntu    20   0   22256  12760  10384 S   0.0   1.4   0:00.17 systemd
-    973 ubuntu    20   0   22752   4184   2168 S   0.0   0.4   0:00.00 (sd-pam)
-    978 root      20   0   18136  11828   9776 S   0.0   1.3   0:00.01 sshd-se+
-   1177 ubuntu    20   0   18428   7880   5544 S   0.0   0.8   0:03.70 sshd-se+
-   1189 ubuntu    20   0   18392   7772   5444 S   0.0   0.8   0:00.00 sshd-se+
-   1190 ubuntu    20   0    9952   6136   3776 S   0.0   0.7   0:00.22 bash
-   1202 ubuntu    20   0    2852   2192   2040 S   0.0   0.2   0:00.00 sftp-se+
-   1285 root      20   0  365612  44552  38904 S   0.0   4.8   0:00.38 fwupd
-   1734 root      20   0       0      0      0 I   0.0   0.0   0:00.27 kworker+
-   1782 root      20   0       0      0      0 I   0.0   0.0   0:00.31 kworker+
-   1793 root      20   0       0      0      0 I   0.0   0.0   0:00.14 kworker+
-   1827 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
-   1932 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
-   1936 root      20   0       0      0      0 I   0.0   0.0   0:00.07 kworker+
-   1997 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
-   2004 ubuntu    20   0    7960   3608   3336 S   0.0   0.4   0:00.00 monitor+
-   2009 ubuntu    20   0   10964   5260   3212 R   0.0   0.6   0:00.00 top
+    129 root      19  -1   50508  18388  16980 S   0.0   2.0   0:00.33 systemd+
+    147 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    150 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    179 root     -11   0  279208   9364   7292 S   0.0   1.0   0:00.71 multipa+
+    183 systemd+  20   0   22284  13944  11392 S   0.0   1.5   0:00.10 systemd+
+    196 root      20   0   39044  13560   8744 S   0.0   1.5   0:00.37 systemd+
+    200 root      -2   0       0      0      0 S   0.0   0.0   0:00.00 psimon
+    245 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    262 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    266 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    305 root      20   0       0      0      0 S   0.0   0.0   0:00.00 jbd2/nv+
+    306 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    535 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker+
+    553 systemd+  20   0   24652  12284  10696 S   0.0   1.3   0:00.11 systemd+
+    596 root      20   0    2824   1952   1808 S   0.0   0.2   0:00.00 acpid
+    598 root      20   0    2908   2012   1892 S   0.0   0.2   0:00.04 chronyd+
+    600 root      20   0    7488   3048   2800 S   0.0   0.3   0:00.02 cron
+    601 message+  20   0    8748   5352   4348 S   0.0   0.6   0:00.17 dbus-da+
+    613 root      20   0   80796   3988   3688 S   0.0   0.4   0:00.28 irqbala+
+    616 root      20   0   46828  29728  14576 S   0.0   3.2   0:00.20 network+
+    618 polkitd   20   0  381780  10028   7484 S   0.0   1.1   0:00.30 polkitd
+    625 root      20   0 1885748  39540  26460 S   0.0   4.2   0:00.58 snapd
+    628 root      20   0   18188   9148   7880 S   0.0   1.0   0:00.10 systemd+
+    633 root      20   0  543216  15032  12592 S   0.0   1.6   0:00.24 udisksd
+    660 root      20   0   10720   7588   6412 S   0.0   0.8   0:00.04 sshd
+    687 root      20   0    8280   2724   2528 S   0.0   0.3   0:00.00 agetty
+    704 root      20   0    8236   2580   2396 S   0.0   0.3   0:00.01 agetty
+    729 _chrony   20   0   20360   7468   6636 S   0.0   0.8   0:00.18 chronyd
+    735 _chrony   20   0   11936   2420   1776 S   0.0   0.3   0:00.00 chronyd
+    741 root      20   0  126228  32296  17676 S   0.0   3.5   0:00.18 unatten+
+    780 root      20   0  391024  13188  11232 S   0.0   1.4   0:00.09 ModemMa+
+    807 syslog    20   0  220304   5812   4204 S   0.0   0.6   0:00.08 rsyslogd
+   1020 root      20   0 1833076  20704  11976 S   0.0   2.2   0:00.33 amazon-+
+   1068 root      20   0  365652  44464  38812 S   0.0   4.8   0:00.38 fwupd
+   1086 root      20   0   18124  11876   9836 S   0.0   1.3   0:00.02 sshd-se+
+   1091 ubuntu    20   0   22256  12768  10400 S   0.0   1.4   0:00.14 systemd
+   1093 ubuntu    20   0   22748   4172   2160 S   0.0   0.4   0:00.00 (sd-pam)
+   1305 ubuntu    20   0   18424   7780   5452 S   0.0   0.8   0:00.28 sshd-se+
+   1306 ubuntu    20   0    9400   5656   3896 S   0.0   0.6   0:00.07 bash
+   1453 root      20   0       0      0      0 I   0.0   0.0   0:00.84 kworker+
+   1559 root      20   0       0      0      0 I   0.0   0.0   0:00.54 kworker+
+   1698 root      20   0       0      0      0 I   0.0   0.0   0:00.22 kworker+
+   1708 root      20   0       0      0      0 I   0.0   0.0   0:00.19 kworker+
+   1721 root      20   0       0      0      0 I   0.0   0.0   0:00.09 kworker+
+   1752 root      20   0   18132  11920   9876 S   0.0   1.3   0:00.01 sshd-se+
+   1772 root      20   0   18136  11932   9880 S   0.0   1.3   0:00.01 sshd-se+
+   1858 ubuntu    20   0   18388   7888   5560 S   0.0   0.8   0:00.62 sshd-se+
+   1880 ubuntu    20   0    9400   5624   3900 S   0.0   0.6   0:00.08 bash
+   1917 ubuntu    20   0   18392   7792   5464 S   0.0   0.8   0:00.00 sshd-se+
+   1928 ubuntu    20   0    2852   2032   1908 S   0.0   0.2   0:00.00 sftp-se+
+   1933 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+   1959 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+   2073 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+   2074 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+   2083 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker+
+   2090 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker+
+   2097 ubuntu    20   0    7960   3580   3308 S   0.0   0.4   0:00.00 monitor+
+   2102 ubuntu    20   0   10964   5264   3212 R   0.0   0.6   0:00.00 top
 --------------------MEMORY USAGE----------------------------
                total        used        free      shared  buff/cache   available
-Mem:           908Mi       305Mi       327Mi       2.7Mi       384Mi       603Mi
+Mem:           908Mi       312Mi       306Mi       2.7Mi       401Mi       596Mi
 Swap:             0B          0B          0B
 ------------------------DISK USAGE--------------------------
-324K	.
+Filesystem       Size  Used Avail Use% Mounted on
+/dev/root        6.7G  2.8G  3.9G  42% /
+tmpfs            455M     0  455M   0% /dev/shm
+tmpfs            182M  908K  181M   1% /run
+efivarfs         128K  3.3K  120K   3% /sys/firmware/efi/efivars
+tmpfs            455M     0  455M   0% /tmp
+none             1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+none             1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+/dev/nvme0n1p13  989M  163M  760M  18% /boot
+/dev/nvme0n1p15  105M  6.3M   99M   7% /boot/efi
+none             1.0M     0  1.0M   0% /run/credentials/systemd-networkd.service
+none             1.0M     0  1.0M   0% /run/credentials/getty@tty1.service
+none             1.0M     0  1.0M   0% /run/credentials/serial-getty@ttyS0.service
+tmpfs             91M  8.0K   91M   1% /run/user/1000
